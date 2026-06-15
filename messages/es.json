@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "title": "Leonardo Sainz Verón — Artista Circense y Acróbata",
+    "description": "Portador de mano a mano, cangrejo coreano y aerial straps. Showreels, galería, CV y contacto para directores de casting."
+  },
+  "nav": {
+    "hero": "Inicio",
+    "reel": "Showreel",
+    "gallery": "Galería",
+    "cv": "CV",
+    "contact": "Contacto",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú"
+  },
+  "hero": {
+    "cta": "Ver showreel",
+    "scroll": "Desplazar"
+  },
+  "reel": {
+    "title": "Showreel",
+    "subtitle": "Destacados por disciplina"
+  },
+  "gallery": {
+    "title": "Galería",
+    "subtitle": "Retratos y fotos de escenario",
+    "headshot": "Retrato",
+    "performance": "Escenario"
+  },
+  "cv": {
+    "title": "Experiencia",
+    "subtitle": "Formación, disciplinas y trayectoria",
+    "disciplines": "Disciplinas",
+    "credits": "Trayectoria",
+    "languages": "Idiomas",
+    "physical": "Datos físicos",
+    "age": "Edad",
+    "height": "Altura",
+    "years": "años",
+    "download": "Descargar CV (PDF)"
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Disponible para contratos internacionales",
+    "email": "Correo electrónico",
+    "instagram": "Instagram",
+    "stagelync": "StageLync",
+    "cta": "Enviar correo"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "description": "La página que buscas no existe.",
+    "back": "Volver al inicio"
+  }
+}

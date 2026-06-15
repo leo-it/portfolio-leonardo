@@ -1,7 +1,13 @@
+import createNextIntlPlugin from "next-intl/plugin";
 import type { NextConfig } from "next";
 
+const withNextIntl = createNextIntlPlugin("./src/lib/i18n/request.ts");
+
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    dangerouslyAllowSVG: true,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+  },
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);

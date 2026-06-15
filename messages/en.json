@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "title": "Leonardo Sainz Verón — Circus Artist & Acrobat",
+    "description": "Hand-to-hand base, Korean crab and aerial straps artist. Showreels, gallery, CV and contact for casting directors."
+  },
+  "nav": {
+    "hero": "Home",
+    "reel": "Showreel",
+    "gallery": "Gallery",
+    "cv": "CV",
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "hero": {
+    "cta": "Watch showreel",
+    "scroll": "Scroll down"
+  },
+  "reel": {
+    "title": "Showreel",
+    "subtitle": "Highlights by discipline"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Portraits and performance photos",
+    "headshot": "Portrait",
+    "performance": "Performance"
+  },
+  "cv": {
+    "title": "Experience",
+    "subtitle": "Training, disciplines and professional background",
+    "disciplines": "Disciplines",
+    "credits": "Background",
+    "languages": "Languages",
+    "physical": "Physical",
+    "age": "Age",
+    "height": "Height",
+    "years": "years",
+    "download": "Download CV (PDF)"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Available for international contracts",
+    "email": "Email",
+    "instagram": "Instagram",
+    "stagelync": "StageLync",
+    "cta": "Send email"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you are looking for does not exist.",
+    "back": "Back to home"
+  }
+}
