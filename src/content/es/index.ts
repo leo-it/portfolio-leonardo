@@ -3,8 +3,8 @@ import type { LocaleContent } from "@/types/content";
 export const esContent: LocaleContent = {
   profile: {
     artistName: "Leonardo Sainz Verón",
-    tagline: "Portador de Mano a Mano · Cangrejo Coreano · Aerial Straps",
-    bio: "Artista circense y acróbata argentino. Entrena desde 2010 en verticales, handstand, mano a mano y acrobacia; luego incorporó aerial straps y danza. Formación en Artes Circenses de la UNSAM (Universidad Nacional de San Martín). Actualmente es portador de mano a mano y cangrejo coreano (portor ruso).",
+    tagline: "Portor de mano mano · Portor coreano · Cintas · Parada de manos",
+    bio: "Artista circense y acróbata argentino. Entrena desde 2010 en verticales, parada de manos, mano a mano y acrobacia; luego incorporó cintas y danza. Formación en Artes Circenses de la UNSAM (Universidad Nacional de San Martín). Actualmente es portor de mano a mano y portor coreano.",
     age: 34,
     height: "1,89 m",
   },
@@ -14,16 +14,16 @@ export const esContent: LocaleContent = {
       apparatus: ["Base", "Elevaciones", "Dinámicas", "Tempo"],
     },
     {
-      name: "Cangrejo Coreano / Portor Ruso",
-      apparatus: ["Base en cangrejo coreano", "Base en portor ruso", "Acrobacia en pareja"],
+      name: "Portor coreano",
+      apparatus: ["Portor coreano", "Portor ruso", "Acrobacia en pareja"],
     },
     {
-      name: "Aerial Straps",
-      apparatus: ["Straps aéreos", "Fuerza y control", "Coreografía"],
+      name: "Cintas",
+      apparatus: ["Cintas aéreas", "Fuerza y control", "Coreografía"],
     },
     {
       name: "Acrobacia",
-      apparatus: ["Handstand", "Verticales", "Acrobacia de piso"],
+      apparatus: ["Parada de manos", "Verticales", "Acrobacia de piso"],
     },
   ],
   credits: [
@@ -35,13 +35,13 @@ export const esContent: LocaleContent = {
     },
     {
       company: "Entrenamiento independiente",
-      role: "Mano a mano, acrobacia y aerial straps",
+      role: "Mano a mano, acrobacia y cintas",
       period: "Desde 2010",
       location: "Argentina",
     },
     {
       company: "Rol actual",
-      role: "Portador de mano a mano y cangrejo coreano",
+      role: "Portor de mano a mano y portor coreano",
       period: "Actualidad",
       location: "Disponible para contratos",
     },
@@ -61,10 +61,10 @@ export const esContent: LocaleContent = {
     },
     {
       id: "straps-reel",
-      title: "Reel de Aerial Straps",
+      title: "Reel de Cintas",
       year: "2024",
       company: "Showreel",
-      category: "Aerial Straps",
+      category: "Cintas",
       media: {
         type: "embed",
         src: "https://www.youtube.com/embed/dQw4w9WgXcQ",
@@ -100,7 +100,7 @@ export const esContent: LocaleContent = {
     {
       id: "g3",
       src: "/images/gallery-03.svg",
-      alt: "Acto de aerial straps en escenario",
+      alt: "Acto de cintas en escenario",
       category: "performance",
     },
     {
@@ -112,13 +112,13 @@ export const esContent: LocaleContent = {
     {
       id: "g5",
       src: "/images/gallery-05.svg",
-      alt: "Trabajo de base en cangrejo coreano / portor ruso",
+      alt: "Trabajo de portor coreano",
       category: "performance",
     },
     {
       id: "g6",
       src: "/images/gallery-06.svg",
-      alt: "Handstand y acrobacia en verticales",
+      alt: "Parada de manos y acrobacia en verticales",
       category: "performance",
     },
   ],
