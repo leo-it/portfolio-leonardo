@@ -30,13 +30,13 @@ export async function generateMetadata({ params }: Props) {
       type: "website",
       locale: locale === "es" ? "es_ES" : "en_US",
       siteName: content.profile.artistName,
-      images: [{ url: "/images/hero-poster.svg", width: 800, height: 1000 }],
+      images: [{ url: "/images/hero-mano-mano.png", width: 472, height: 1024 }],
     },
     twitter: {
       card: "summary_large_image",
       title: t("title"),
       description: t("description"),
-      images: ["/images/hero-poster.svg"],
+      images: ["/images/hero-mano-mano.png"],
     },
   };
 }

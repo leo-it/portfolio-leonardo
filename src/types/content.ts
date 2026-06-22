@@ -45,6 +45,7 @@ export interface GalleryImage {
   src: string;
   alt: string;
   category: "headshot" | "performance";
+  focus?: string;
 }
 
 export interface ContactInfo {

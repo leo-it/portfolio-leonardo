@@ -9,7 +9,16 @@ export function isSvgSrc(src: string) {
   return src.endsWith(".svg");
 }
 
-export function PortfolioImage({ src, alt, className, fill, sizes, priority }: PortfolioImageProps) {
+export function PortfolioImage({
+  src,
+  alt,
+  className,
+  fill,
+  sizes,
+  priority,
+  style,
+  ...rest
+}: PortfolioImageProps) {
   if (isSvgSrc(src)) {
     if (fill) {
       return (
@@ -18,13 +27,15 @@ export function PortfolioImage({ src, alt, className, fill, sizes, priority }: P
           src={src}
           alt={alt}
           className={`absolute inset-0 h-full w-full object-cover ${className ?? ""}`}
+          style={style}
+          {...rest}
         />
       );
     }
 
     return (
       // eslint-disable-next-line @next/next/no-img-element
-      <img src={src} alt={alt} className={className} />
+      <img src={src} alt={alt} className={className} style={style} {...rest} />
     );
   }
 
@@ -36,6 +47,8 @@ export function PortfolioImage({ src, alt, className, fill, sizes, priority }: P
       className={className}
       sizes={sizes}
       priority={priority}
+      style={style}
+      {...rest}
     />
   );
 }

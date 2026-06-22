@@ -97,14 +97,15 @@ export function ImageLightbox({
       </button>
 
       <div
-        className="relative h-[70vh] w-full max-w-4xl"
+        className="relative mx-auto aspect-[9/16] h-[85vh] w-auto max-w-[min(90vw,24rem)]"
         onClick={(e) => e.stopPropagation()}
       >
         <PortfolioImage
           src={image.src}
           alt={image.alt}
           fill
-          className="object-contain"
+          className="rounded-lg object-contain"
+          style={image.focus ? { objectPosition: image.focus } : undefined}
           sizes="90vw"
           priority
         />
