@@ -26,10 +26,9 @@ export function HeroSection({ profile, heroMedia }: HeroSectionProps) {
           media={heroMedia}
           title={profile.artistName}
           className="rounded-none"
-          autoPlay
           fill
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-stage-dark via-stage-dark/60 to-stage-dark/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-stage-dark via-stage-dark/70 to-stage-dark/20" />
       </div>
 
       <div className="relative z-10 w-full pb-20 pt-32">

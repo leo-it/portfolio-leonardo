@@ -35,13 +35,17 @@ export function VideoPlayer({
   const isPortrait = aspectRatio === "portrait";
 
   if (media.type === "image") {
+    const imageClass = fill
+      ? "object-cover object-[center_50%]"
+      : "object-cover";
+
     return (
-      <div className={`relative overflow-hidden rounded-lg ${aspectClasses} ${className}`}>
+      <div className={`relative overflow-hidden ${fill ? "h-full w-full" : `rounded-lg ${aspectClasses}`} ${className}`}>
         <PortfolioImage
           src={media.src}
           alt={title}
           fill
-          className="object-cover"
+          className={imageClass}
           sizes="100vw"
           priority={fill}
         />
