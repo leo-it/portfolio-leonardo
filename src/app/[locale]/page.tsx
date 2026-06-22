@@ -1,6 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
 import { getContent } from "@/content";
-import { heroMedia, cvPdfPath } from "@/data/media";
+import { heroMedia, cvPdfPath, materialDriveUrl } from "@/data/media";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { ShowReelSection } from "@/components/sections/ShowReelSection";
 import { GallerySection } from "@/components/sections/GallerySection";
@@ -21,7 +21,7 @@ export default async function HomePage({ params }: Props) {
   return (
     <>
       <HeroSection profile={content.profile} heroMedia={heroMedia} />
-      <ShowReelSection reels={content.showReels} />
+      <ShowReelSection reels={content.showReels} materialDriveUrl={materialDriveUrl} />
       <GallerySection images={content.gallery} />
       <CVSection
         profile={content.profile}
@@ -30,7 +30,7 @@ export default async function HomePage({ params }: Props) {
         languages={content.languages}
         cvPdfPath={cvPdfPath}
       />
-      <ContactSection contact={content.contact} />
+      <ContactSection contact={content.contact} materialDriveUrl={materialDriveUrl} />
     </>
   );
 }

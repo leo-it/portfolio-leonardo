@@ -8,9 +8,10 @@ import { FadeIn } from "@/components/ui/FadeIn";
 
 interface ContactSectionProps {
   contact: ContactInfo;
+  materialDriveUrl?: string;
 }
 
-export function ContactSection({ contact }: ContactSectionProps) {
+export function ContactSection({ contact, materialDriveUrl }: ContactSectionProps) {
   const t = useTranslations("contact");
 
   const links = [
@@ -20,6 +21,9 @@ export function ContactSection({ contact }: ContactSectionProps) {
       : null,
     contact.stagelync
       ? { label: t("stagelync"), href: contact.stagelync, value: "StageLync" }
+      : null,
+    materialDriveUrl
+      ? { label: t("drive"), href: materialDriveUrl, value: "Google Drive" }
       : null,
   ].filter(Boolean) as { label: string; href: string; value: string }[];
 

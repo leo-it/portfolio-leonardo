@@ -3,7 +3,7 @@ import type { LocaleContent } from "@/types/content";
 export const enContent: LocaleContent = {
   profile: {
     artistName: "Leonardo Sainz Verón",
-    tagline: "Hand-to-Hand Base · Korean Crab · Aerial Straps",
+    tagline: "Hand-to-Hand Base · Korean Crab · Aerial Straps · Handstands",
     bio: "Argentine circus artist and acrobat. Training since 2010 in handstands, verticals, hand-to-hand and acrobatics, later expanding into aerial straps and dance. Graduate of the Circus Arts program at UNSAM (Universidad Nacional de San Martín). Currently working as a hand-to-hand base and Korean crab (Russian crab) base.",
     age: 34,
     height: "1.89 m",

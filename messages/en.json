@@ -18,7 +18,9 @@
   },
   "reel": {
     "title": "Showreel",
-    "subtitle": "Highlights by discipline"
+    "subtitle": "Highlights by discipline",
+    "drive": "More material on Drive",
+    "driveHint": "Additional videos and casting material"
   },
   "gallery": {
     "title": "Gallery",
@@ -44,6 +46,7 @@
     "email": "Email",
     "instagram": "Instagram",
     "stagelync": "StageLync",
+    "drive": "Material on Drive",
     "cta": "Send email"
   },
   "footer": {

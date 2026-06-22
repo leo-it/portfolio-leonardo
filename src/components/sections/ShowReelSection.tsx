@@ -5,13 +5,15 @@ import { useTranslations } from "next-intl";
 import type { ShowReelItem } from "@/types/content";
 import { Section } from "@/components/ui/Section";
 import { VideoPlayer } from "@/components/ui/VideoPlayer";
+import { Button } from "@/components/ui/Button";
 import { FadeIn } from "@/components/ui/FadeIn";
 
 interface ShowReelSectionProps {
   reels: ShowReelItem[];
+  materialDriveUrl?: string;
 }
 
-export function ShowReelSection({ reels }: ShowReelSectionProps) {
+export function ShowReelSection({ reels, materialDriveUrl }: ShowReelSectionProps) {
   const t = useTranslations("reel");
   const [activeId, setActiveId] = useState(reels[0]?.id ?? "");
 
@@ -35,6 +37,15 @@ export function ShowReelSection({ reels }: ShowReelSectionProps) {
           >
             <VideoPlayer media={activeReel.media} title={activeReel.title} className="mb-8" />
           </div>
+        </FadeIn>
+      )}
+
+      {materialDriveUrl && (
+        <FadeIn delay={0.2} className="mt-8 text-center">
+          <p className="mb-4 text-sm text-stage-cream/50">{t("driveHint")}</p>
+          <Button href={materialDriveUrl} external variant="outline">
+            {t("drive")}
+          </Button>
         </FadeIn>
       )}
 
