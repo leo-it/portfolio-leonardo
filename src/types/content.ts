@@ -2,10 +2,13 @@ export type Locale = "en" | "es";
 
 export type MediaType = "local" | "embed" | "image";
 
+export type AspectRatio = "landscape" | "portrait";
+
 export interface MediaSource {
   type: MediaType;
   src: string;
   poster?: string;
+  aspectRatio?: AspectRatio;
 }
 
 export interface Profile {
