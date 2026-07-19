@@ -86,24 +86,6 @@ export const enContent: LocaleContent = {
   ],
   gallery: [
     {
-      id: "g1",
-      src: "/images/gallery-01.png",
-      alt: "One-handed handstand on outdoor dock",
-      category: "performance",
-    },
-    {
-      id: "g2",
-      src: "/images/gallery-02.png",
-      alt: "Base training with flyer mid-flip in circus gym",
-      category: "performance",
-    },
-    {
-      id: "g3",
-      src: "/images/gallery-03.png",
-      alt: "Hand to hand lift and arch in studio",
-      category: "performance",
-    },
-    {
       id: "g4",
       src: "/images/gallery-04.png",
       alt: "Press handstand by the lake",
@@ -119,6 +101,24 @@ export const enContent: LocaleContent = {
       id: "g6",
       src: "/images/gallery-06.png",
       alt: "Base tossing flyer outdoors",
+      category: "performance",
+    },
+    {
+      id: "g1",
+      src: "/images/gallery-01.png",
+      alt: "One-handed handstand on outdoor dock",
+      category: "performance",
+    },
+    {
+      id: "g2",
+      src: "/images/gallery-02.png",
+      alt: "Base training with flyer mid-flip in circus gym",
+      category: "performance",
+    },
+    {
+      id: "g3",
+      src: "/images/gallery-03.png",
+      alt: "Hand to hand lift and arch in studio",
       category: "performance",
     },
   ],

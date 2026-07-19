@@ -87,24 +87,6 @@ export const esContent: LocaleContent = {
   ],
   gallery: [
     {
-      id: "g1",
-      src: "/images/gallery-01.png",
-      alt: "Parada de manos a una mano en muelle al aire libre",
-      category: "performance",
-    },
-    {
-      id: "g2",
-      src: "/images/gallery-02.png",
-      alt: "Entrenamiento de portor con volado en gimnasio de circo",
-      category: "performance",
-    },
-    {
-      id: "g3",
-      src: "/images/gallery-03.png",
-      alt: "Mano a mano en estudio — elevación y arco",
-      category: "performance",
-    },
-    {
       id: "g4",
       src: "/images/gallery-04.png",
       alt: "Parada de manos en verticales junto al lago",
@@ -120,6 +102,24 @@ export const esContent: LocaleContent = {
       id: "g6",
       src: "/images/gallery-06.png",
       alt: "Portor lanzando voladora al aire libre",
+      category: "performance",
+    },
+    {
+      id: "g1",
+      src: "/images/gallery-01.png",
+      alt: "Parada de manos a una mano en muelle al aire libre",
+      category: "performance",
+    },
+    {
+      id: "g2",
+      src: "/images/gallery-02.png",
+      alt: "Entrenamiento de portor con volado en gimnasio de circo",
+      category: "performance",
+    },
+    {
+      id: "g3",
+      src: "/images/gallery-03.png",
+      alt: "Mano a mano en estudio — elevación y arco",
       category: "performance",
     },
   ],
