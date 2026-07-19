@@ -73,10 +73,10 @@ export const esContent: LocaleContent = {
     },
     {
       id: "banquine",
-      title: "Banquine",
+      title: "Banquina",
       year: "2025",
       company: "Leonardo Sainz Verón",
-      category: "Banquine",
+      category: "Banquina",
       media: {
         type: "embed",
         src: "https://www.youtube.com/embed/3O5sMHtIivM",

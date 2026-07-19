@@ -24,7 +24,6 @@ export function ShowReelSection({ reels, materialDriveUrl }: ShowReelSectionProp
       <FadeIn>
         <div className="mb-10">
           <h2 className="font-display text-4xl text-stage-cream md:text-5xl">{t("title")}</h2>
-          <p className="mt-3 text-stage-cream/60">{t("subtitle")}</p>
         </div>
       </FadeIn>
 
