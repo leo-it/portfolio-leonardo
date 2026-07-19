@@ -16,61 +16,67 @@ interface ShowReelSectionProps {
 export function ShowReelSection({ reels, materialDriveUrl }: ShowReelSectionProps) {
   const t = useTranslations("reel");
   const [activeId, setActiveId] = useState(reels[0]?.id ?? "");
-
+  const hasMultiple = reels.length > 1;
   const activeReel = reels.find((r) => r.id === activeId) ?? reels[0];
 
   return (
     <Section id="reel" className="bg-stage-surface">
       <FadeIn>
-        <div className="mb-12">
+        <div className="mb-10">
           <h2 className="font-display text-4xl text-stage-cream md:text-5xl">{t("title")}</h2>
           <p className="mt-3 text-stage-cream/60">{t("subtitle")}</p>
         </div>
       </FadeIn>
 
+      {hasMultiple && (
+        <FadeIn delay={0.05}>
+          <div
+            className="mb-8 flex flex-wrap justify-center gap-2"
+            role="tablist"
+            aria-label={t("title")}
+          >
+            {reels.map((reel) => {
+              const isActive = reel.id === activeId;
+              return (
+                <button
+                  key={reel.id}
+                  type="button"
+                  role="tab"
+                  aria-selected={isActive}
+                  onClick={() => setActiveId(reel.id)}
+                  className={`rounded-full border px-4 py-2 text-sm tracking-wide transition-colors ${
+                    isActive
+                      ? "border-stage-gold bg-stage-gold/15 text-stage-gold"
+                      : "border-white/15 text-stage-cream/60 hover:border-stage-gold/40 hover:text-stage-cream"
+                  }`}
+                >
+                  {reel.title}
+                </button>
+              );
+            })}
+          </div>
+        </FadeIn>
+      )}
+
       {activeReel && (
-        <FadeIn delay={0.1}>
+        <FadeIn key={activeReel.id} delay={0.1}>
           <div
             className={
-              activeReel.media.aspectRatio === "portrait" ? "mx-auto max-w-md" : ""
+              activeReel.media.aspectRatio === "portrait" ? "mx-auto max-w-md" : undefined
             }
           >
-            <VideoPlayer media={activeReel.media} title={activeReel.title} className="mb-8" />
+            <VideoPlayer media={activeReel.media} title={activeReel.title} />
           </div>
         </FadeIn>
       )}
 
       {materialDriveUrl && (
-        <FadeIn delay={0.2} className="mt-8 text-center">
+        <FadeIn delay={0.2} className="mt-12 text-center">
           <p className="mb-4 text-sm text-stage-cream/50">{t("driveHint")}</p>
           <Button href={materialDriveUrl} external variant="outline">
             {t("drive")}
           </Button>
         </FadeIn>
-      )}
-
-      {reels.length > 1 && (
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {reels.map((reel, index) => (
-            <FadeIn key={reel.id} delay={0.1 + index * 0.05}>
-              <button
-                type="button"
-                onClick={() => setActiveId(reel.id)}
-                className={`w-full rounded-lg border p-4 text-left transition-all ${
-                  activeId === reel.id
-                    ? "border-stage-gold bg-stage-gold/10"
-                    : "border-white/10 bg-stage-dark/50 hover:border-stage-gold/40"
-                }`}
-              >
-                <span className="text-xs tracking-wider text-stage-gold uppercase">
-                  {reel.category} · {reel.year}
-                </span>
-                <h3 className="mt-1 font-medium text-stage-cream">{reel.title}</h3>
-                <p className="mt-1 text-sm text-stage-cream/50">{reel.company}</p>
-              </button>
-            </FadeIn>
-          ))}
-        </div>
       )}
     </Section>
   );

@@ -6,15 +6,20 @@ import { useLocale } from "next-intl";
 import { Link, usePathname } from "@/lib/i18n/routing";
 import { routing } from "@/lib/i18n/routing";
 import { useActiveSection } from "@/hooks/useActiveSection";
+import { showCvSection } from "@/data/media";
 import type { Locale } from "@/types/content";
 
-const navItems = [
+const allNavItems = [
   { key: "hero", href: "#hero", id: "hero" },
   { key: "reel", href: "#reel", id: "reel" },
   { key: "gallery", href: "#gallery", id: "gallery" },
   { key: "cv", href: "#cv", id: "cv" },
   { key: "contact", href: "#contact", id: "contact" },
 ] as const;
+
+const navItems = allNavItems.filter(
+  (item) => item.key !== "cv" || showCvSection,
+);
 
 interface HeaderProps {
   artistName: string;
