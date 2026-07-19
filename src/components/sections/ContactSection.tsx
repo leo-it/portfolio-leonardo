@@ -17,7 +17,7 @@ export function ContactSection({ contact, materialDriveUrl }: ContactSectionProp
   const links = [
     { label: t("email"), href: `mailto:${contact.email}`, value: contact.email },
     contact.instagram
-      ? { label: t("instagram"), href: contact.instagram, value: "Instagram" }
+      ? { label: t("instagram"), href: contact.instagram, value: "@leotrickss" }
       : null,
     contact.stagelync
       ? { label: t("stagelync"), href: contact.stagelync, value: "StageLync" }

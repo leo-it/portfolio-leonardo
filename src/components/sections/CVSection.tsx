@@ -61,13 +61,10 @@ export function CVSection({
           <h3 className="mb-6 text-sm tracking-[0.2em] text-stage-gold uppercase">
             {t("disciplines")}
           </h3>
-          <ul className="space-y-6">
+          <ul className="space-y-3">
             {disciplines.map((discipline) => (
               <li key={discipline.name}>
                 <p className="font-medium text-stage-cream">{discipline.name}</p>
-                <p className="mt-1 text-sm text-stage-cream/50">
-                  {discipline.apparatus.join(" · ")}
-                </p>
               </li>
             ))}
           </ul>

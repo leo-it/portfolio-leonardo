@@ -4,27 +4,17 @@ export const esContent: LocaleContent = {
   profile: {
     artistName: "Leonardo Sainz Verón",
     tagline: "Portor de mano mano · Portor coreano · Cintas · Parada de manos",
-    bio: "Artista circense y acróbata argentino. Entrena desde 2010 en verticales, parada de manos, mano a mano y acrobacia; luego incorporó cintas y danza. Formación en Artes Circenses de la UNSAM (Universidad Nacional de San Martín). Actualmente es portor de mano a mano y portor coreano.",
+    bio: "Artista circense desde 2010. Me forme como portor de mano mano con Mariano Pujal y Martin Carella, actualmente me estoy formando como portor de cuadro coreano con Rafael y Blanca Luz Capella (duo Morosof), y desde hace mas de 10 años practico parada de manos, cintas entre otras disciplinas.",
     age: 34,
     height: "1,89 m",
   },
   disciplines: [
-    {
-      name: "Mano a Mano",
-      apparatus: ["Base", "Elevaciones", "Dinámicas", "Tempo"],
-    },
-    {
-      name: "Portor coreano",
-      apparatus: ["Portor coreano", "Portor ruso", "Acrobacia en pareja"],
-    },
-    {
-      name: "Cintas",
-      apparatus: ["Cintas aéreas", "Fuerza y control", "Coreografía"],
-    },
-    {
-      name: "Acrobacia",
-      apparatus: ["Parada de manos", "Verticales", "Acrobacia de piso"],
-    },
+    { name: "Mano a Mano" },
+    { name: "Portor coreano" },
+    { name: "Cintas" },
+    { name: "Parada de manos" },
+    { name: "Acrobacia" },
+    { name: "Tango" },
   ],
   credits: [
     {
@@ -33,15 +23,10 @@ export const esContent: LocaleContent = {
       period: "Egresado",
       location: "Buenos Aires, Argentina",
     },
+    
     {
-      company: "Entrenamiento independiente",
-      role: "Mano a mano, acrobacia y cintas",
-      period: "Desde 2010",
-      location: "Argentina",
-    },
-    {
-      company: "Rol actual",
-      role: "Portor de mano a mano y portor coreano",
+      company: "Mano mano y cintas",
+      role: "Trabajo en eventos",
       period: "Actualidad",
       location: "Disponible para contratos",
     },
@@ -101,7 +86,7 @@ export const esContent: LocaleContent = {
   ],
   contact: {
     email: "lsainzveron@gmail.com",
-    instagram: "https://instagram.com/leonardosainz",
+    instagram: "https://instagram.com/leotrickss",
   },
   languages: ["Español", "Inglés"],
 };

@@ -3,28 +3,18 @@ import type { LocaleContent } from "@/types/content";
 export const enContent: LocaleContent = {
   profile: {
     artistName: "Leonardo Sainz Verón",
-    tagline: "Hand-to-Hand Base · Korean Crab · Aerial Straps · Handstands",
-    bio: "Argentine circus artist and acrobat. Training since 2010 in handstands, verticals, hand-to-hand and acrobatics, later expanding into aerial straps and dance. Graduate of the Circus Arts program at UNSAM (Universidad Nacional de San Martín). Currently working as a hand-to-hand base and Korean crab (Russian crab) base.",
+    tagline: "Hand-to-Hand Base · Korean Cradle Base · Straps · Handstands",
+    bio: "Circus artist since 2010. Trained as a hand-to-hand base with Mariano Pujal and Martín Carella. Currently training as a Korean cradle base with Rafael and Blanca Luz Capella (Dúo Morosof). For over 10 years I have practiced handstands, straps, and other disciplines.",
     age: 34,
     height: "1.89 m",
   },
   disciplines: [
-    {
-      name: "Hand to Hand",
-      apparatus: ["Base", "Partner lifts", "Dynamic skills", "Tempo"],
-    },
-    {
-      name: "Korean Crab / Russian Crab",
-      apparatus: ["Korean-style crab base", "Russian swing base", "Partner acrobatics"],
-    },
-    {
-      name: "Aerial Straps",
-      apparatus: ["Aerial straps", "Strength & control", "Choreography"],
-    },
-    {
-      name: "Acrobatics",
-      apparatus: ["Handstand", "Verticals", "Floor acrobatics"],
-    },
+    { name: "Hand to Hand" },
+    { name: "Korean Cradle Base" },
+    { name: "Straps" },
+    { name: "Handstands" },
+    { name: "Acrobatics" },
+    { name: "Tango" },
   ],
   credits: [
     {
@@ -34,14 +24,8 @@ export const enContent: LocaleContent = {
       location: "Buenos Aires, Argentina",
     },
     {
-      company: "Independent Training",
-      role: "Hand to Hand, Acrobatics & Aerial Straps",
-      period: "Since 2010",
-      location: "Argentina",
-    },
-    {
-      company: "Current Role",
-      role: "Hand-to-Hand Base & Korean Crab Base",
+      company: "Hand to Hand & Straps",
+      role: "Event work",
       period: "Present",
       location: "Available for contracts",
     },
@@ -101,7 +85,7 @@ export const enContent: LocaleContent = {
   ],
   contact: {
     email: "lsainzveron@gmail.com",
-    instagram: "https://instagram.com/leonardosainz",
+    instagram: "https://instagram.com/leotrickss",
   },
   languages: ["Spanish", "English"],
 };

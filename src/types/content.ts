@@ -28,7 +28,6 @@ export interface Credit {
 
 export interface Discipline {
   name: string;
-  apparatus: string[];
 }
 
 export interface ShowReelItem {
