@@ -6,7 +6,7 @@ export const heroMedia = {
 export const cvPdfPath = "/cv/cv.pdf";
 
 /** Pasá a true cuando tengas el CV listo */
-export const showCvSection = false;
+export const showCvSection = true;
 
 /** Carpeta de Google Drive con material de video */
 export const materialDriveUrl =
